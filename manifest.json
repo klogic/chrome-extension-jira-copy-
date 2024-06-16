@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Jira Copy Extensions",
+  "description": "Copy Jira Link with Name",
+  "version": "1.0",
+  "action": {
+    "default_icon": "icon.png"
+  },
+  "permissions": ["activeTab", "tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://developer.chrome.com/docs/extensions/*",
+        "https://developer.chrome.com/docs/webstore/*",
+        "https://klogic.atlassian.net/*"
+      ]
+    }
+  ]
+}
