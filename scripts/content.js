@@ -4,7 +4,7 @@ function getCurrentUrl() {
 
 const execCopy = async (evt) => {
   const link = getCurrentUrl();
-  const title = document.getElementsByTagName("title")[0].innerText;
+  const title = document.getELementById("summary-val").innerText;
   const template = `<a href='${link}'>${title}</a>`;
 
   const TYPE = "text/html";

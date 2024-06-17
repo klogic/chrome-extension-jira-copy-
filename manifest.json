@@ -16,7 +16,8 @@
       "matches": [
         "https://developer.chrome.com/docs/extensions/*",
         "https://developer.chrome.com/docs/webstore/*",
-        "https://klogic.atlassian.net/*"
+        "https://klogic.atlassian.net/*",
+        "https://jira.refinitiv.com/*"
       ]
     }
   ]
