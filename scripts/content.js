@@ -4,8 +4,9 @@ function getCurrentUrl() {
 
 const execCopy = async (evt) => {
   const link = getCurrentUrl();
-  const title = document.getElementsByTagName("title")[0].innerText;
-  const template = `<a href='${link}'>${title}</a>`;
+  const title = document.getElementById("summary-val").innerText;
+  const jiraNumber = document.getElementById("key-val").innerText;
+  const template = `<a href='${link}'>${jiraNumber} - ${title}</a>`;
 
   const TYPE = "text/html";
   const BLOB = new Blob([template], { type: TYPE });

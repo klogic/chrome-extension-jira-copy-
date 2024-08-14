@@ -6,17 +6,23 @@
   "action": {
     "default_icon": "icon.png"
   },
-  "permissions": ["activeTab", "tabs"],
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ],
   "background": {
     "service_worker": "background.js"
   },
   "content_scripts": [
     {
-      "js": ["scripts/content.js"],
+      "js": [
+        "scripts/content.js"
+      ],
       "matches": [
         "https://developer.chrome.com/docs/extensions/*",
         "https://developer.chrome.com/docs/webstore/*",
-        "https://klogic.atlassian.net/*"
+        "https://klogic.atlassian.net/*",
+        "https://jira.refinitiv.com/*"
       ]
     }
   ]
